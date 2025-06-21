@@ -11,10 +11,6 @@ class PromoBanner extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: const Color(0xffc67c4e),
-        image: const DecorationImage(
-          image: AssetImage('assets/images/promo_coffee.png'),
-          fit: BoxFit.cover,
-        ),
       ),
       child: Align(
         alignment: Alignment.centerLeft,

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:group_assignment/screens/favourite/cubit/favourite_cubit.dart';
-import 'package:group_assignment/screens/favourite/cubit/favourite_state.dart';
-import 'package:group_assignment/widgets/home/main_card.dart';
+import 'package:group_app_project/screens/favourite/cubit/favourite_cubit.dart';
+import 'package:group_app_project/screens/favourite/cubit/favourite_state.dart';
+import 'package:group_app_project/widgets/home/main_card.dart'; // CoffeeCard
 
 class FavoriteScreen extends StatelessWidget {
   const FavoriteScreen({super.key});

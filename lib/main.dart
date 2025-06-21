@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:group_assignment/screens/favourite/cubit/favourite_cubit.dart';
-import 'package:group_assignment/widgets/home/bottom_nav/cubit/bottom_nav_cubit.dart';
-import 'package:group_assignment/widgets/home/bottom_nav/main_navigation_screen.dart';
+import 'package:group_app_project/screens/authentication/register/register_screen.dart';
+import 'package:group_app_project/screens/favourite/cubit/favourite_cubit.dart';
+import 'package:group_app_project/widgets/home/bottom_nav/cubit/bottom_nav_cubit.dart';
 
 
 void main() {
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MainNavigationScreen(),
+      home: RegisterScreen(),
     );
   }
 }

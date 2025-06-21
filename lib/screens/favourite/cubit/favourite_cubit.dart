@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:group_assignment/screens/favourite/cubit/favourite_state.dart';
-import 'package:group_assignment/widgets/home/main_card.dart';
+import 'package:group_app_project/screens/favourite/cubit/favourite_state.dart';
+import 'package:group_app_project/widgets/home/main_card.dart';
 
 class FavoriteCubit extends Cubit<FavoriteState> {
   FavoriteCubit() : super(const FavoriteState());

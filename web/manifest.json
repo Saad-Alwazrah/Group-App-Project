@@ -1,6 +1,6 @@
 {
-    "name": "group_assignment",
-    "short_name": "group_assignment",
+    "name": "group_app_project",
+    "short_name": "group_app_project",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

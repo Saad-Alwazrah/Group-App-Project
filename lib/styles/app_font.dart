@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:group_assignment/styles/app_colors.dart';
+import 'package:group_app_project/styles/app_colors.dart';
 
 
 class AppFonts {

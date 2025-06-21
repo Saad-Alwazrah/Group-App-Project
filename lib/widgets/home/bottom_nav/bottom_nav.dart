@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:group_assignment/widgets/home/bottom_nav/cubit/bottom_nav_cubit.dart';
-import 'package:group_assignment/widgets/home/bottom_nav/cubit/bottom_nav_state.dart';
-
+import 'package:group_app_project/widgets/home/bottom_nav/cubit/bottom_nav_cubit.dart';
+import 'package:group_app_project/widgets/home/bottom_nav/cubit/bottom_nav_state.dart';
 
 class BottomNav extends StatelessWidget {
   const BottomNav({super.key});
