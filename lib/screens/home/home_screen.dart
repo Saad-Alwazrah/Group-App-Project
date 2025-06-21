@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:group_assignment/screens/favourite/cubit/favourite_cubit.dart';
-import 'package:group_assignment/screens/favourite/cubit/favourite_state.dart';
-import 'package:group_assignment/widgets/home/category_filter.dart';
-import 'package:group_assignment/widgets/home/main_card.dart';
-import 'package:group_assignment/widgets/home/promo_banner.dart';
+import 'package:group_app_project/screens/favourite/cubit/favourite_cubit.dart';
+import 'package:group_app_project/screens/favourite/cubit/favourite_state.dart';
+import 'package:group_app_project/widgets/home/category_filter.dart';
+import 'package:group_app_project/widgets/home/main_card.dart';
+import 'package:group_app_project/widgets/home/promo_banner.dart';
 
 class CoffeeHomeScreen extends StatelessWidget {
   const CoffeeHomeScreen({super.key});

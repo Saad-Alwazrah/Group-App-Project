@@ -1,4 +1,4 @@
-import 'package:group_assignment/widgets/home/main_card.dart';
+import 'package:group_app_project/widgets/home/main_card.dart';
 
 class FavoriteState {
   final List<CoffeeItem> favorites;
