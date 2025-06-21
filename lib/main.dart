@@ -1,20 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:group_assignment/screens/favourite/cubit/favourite_cubit.dart';
+import 'package:group_assignment/widgets/home/bottom_nav/cubit/bottom_nav_cubit.dart';
+import 'package:group_assignment/widgets/home/bottom_nav/main_navigation_screen.dart';
+
 
 void main() {
-  runApp(const MainApp());
+  runApp(
+    MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (_) => FavoriteCubit()),
+        BlocProvider(create: (_) => BottomNavCubit()),
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: MainNavigationScreen(),
     );
   }
 }
+
+
