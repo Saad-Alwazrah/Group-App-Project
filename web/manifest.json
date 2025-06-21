@@ -1,6 +1,6 @@
 {
-    "name": "group_assignment",
-    "short_name": "group_assignment",
+    "name": "coffee_enjoyer",
+    "short_name": "coffee_enjoyer",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

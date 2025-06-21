@@ -1,3 +1,3 @@
-# group_assignment
+# coffee_enjoyer
 
 A new Flutter project.

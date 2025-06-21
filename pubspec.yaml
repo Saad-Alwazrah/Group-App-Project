@@ -1,4 +1,4 @@
-name: group_assignment
+name: coffee_enjoyer
 description: "A new Flutter project."
 publish_to: 'none'
 version: 0.1.0
@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_bloc: ^9.1.1
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +18,16 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+
+  fonts:
+    - family: Sora
+      fonts:
+        - asset: custom_fonts/Sora-Thin.ttf
+        - asset: custom_fonts/Sora-SemiBold.ttf
+          weight: 700
+        - asset: custom_fonts/Sora-Regular.ttf
+          weight: 600
+        - asset: custom_fonts/Sora-Medium.ttf
+          weight: 300
+
