@@ -12,4 +12,5 @@ setup() async {
 
     return supabaseConnect;
   });
+  await GetIt.I.allReady();
 }
