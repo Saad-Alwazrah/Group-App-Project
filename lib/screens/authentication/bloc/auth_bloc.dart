@@ -57,12 +57,20 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
   FutureOr<void> loginValidationMethod(
     LoginEvent event,
     Emitter<AuthState> emit,
-  ) {
+  ) async {
     if (loginformKey.currentState!.validate()) {
       log("login validation is successful");
+      final authSuccess = await supabase.signInWithUsername(
+        username: usernameController!.text.trim(),
+        password: passwordController!.text.trim(),
+      );
       clearControllers();
-      authSuccess = true;
-      emit(SuccessState());
+      if (authSuccess) {
+        emit(SuccessState());
+      } else {
+        log("Login validation Failed");
+        emit(ErrorState());
+      }
     } else {
       log("login validation Failed");
       authSuccess = false;
