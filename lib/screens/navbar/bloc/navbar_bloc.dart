@@ -13,7 +13,7 @@ part 'navbar_state.dart';
 class NavbarBloc extends Bloc<NavbarEvent, NavbarState> {
   int currentIndex = 0;
   List<Widget> screens = [
-    HomeScreen(),
+    CoffeeHomeScreen(),
     FavouritesScreen(),
     MapScreen(),
     WikiScreen(),

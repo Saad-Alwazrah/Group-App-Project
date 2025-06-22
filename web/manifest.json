@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
     "name": "june15th",
     "short_name": "june15th",
-=======
-    "name": "group_assignment",
-    "short_name": "group_assignment",
->>>>>>> master
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

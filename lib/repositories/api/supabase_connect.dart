@@ -142,9 +142,12 @@ class SupabaseConnect {
     }
   }
 
-  Future<bool> signUpNewUser(String email, String password) async {
+  Future<bool> signUpNewUser({
+    required String username,
+    required String password,
+  }) async {
     final AuthResponse res = await supabase.client.auth.signUp(
-      email: email,
+      email: "$username@example.com",
       password: password,
     );
     final Session? session = res.session;
@@ -160,9 +163,9 @@ class SupabaseConnect {
     }
   }
 
-  Future<bool> signInWithUsername(String email, String password) async {
+  Future<bool> signInWithUsername(String username, String password) async {
     final AuthResponse res = await supabase.client.auth.signInWithPassword(
-      email: email,
+      email: "$username@example.com",
       password: password,
     );
     final Session? session = res.session;
