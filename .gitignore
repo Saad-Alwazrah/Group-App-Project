@@ -35,6 +35,10 @@ migrate_working_dir/
 **.env
 /android/
 /ios/
+/windows/
+/macos/
+/linux/
+/web/
 
 # Symbolication related
 app.*.symbols
